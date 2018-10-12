@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercise 18</title>
+</head>
+<style>
+</style>
+
+<body>
+
+  <h1>18. Create a table to display all the information of multiple candidates:</h1>
+  <ul>
+    <li>Assume the information source is a remote server</li>
+    <li>Place an #Add link at the top of the table that will allow the user to add a new candidate.</li>
+    <li>Each row must have an add/delete option.</li>
+    <li>Create the ajax methods that handle the GET, POST, DELETE, and PUT operations.
+      <ul>
+        <li>Assume there is a server to handle these methods.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Last name</th>
+        <th>Phone</th>
+        <th>
+          <a href="" id="addLink">#Add</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+
+    </tbody>
+  </table>
+
+
+  <template id="dataRow">
+    <tr class="row">
+      <td class="name"></td>
+      <td class="lname"></td>
+      <td class="phnumber"></td>
+      <td class="phnumber">
+        <a href="#">[Edit/delete]</a>
+      </td>
+    </tr>
+  </template>
+
+
+  <script src="script.js" type="text/javascript"></script>
+
+</body>
+
+</html>

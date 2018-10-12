@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercise 01</title>
+</head>
+<style>
+  #object {
+    border: 1px solid gray;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 350px;
+  }
+</style>
+
+<body>
+
+  <h1>01. Animation using JavaScript</h1>
+  <h3>Requirements:</h5>
+  <p>Create a moveLeft Animation</p>
+
+  <div id="object"></div>
+
+  <script>
+
+    let elem = document.getElementById('object');
+    
+    function myAnimation() {
+      
+      let pos = 350;
+      let id = setInterval(frame, 5);
+      elem.addEventListener('click', frame);
+
+      function frame () {
+        if(pos == 0) {
+          clearInterval(id);
+        } else {
+          pos--;
+          elem.style.left = `${pos}px`;
+        }
+      }
+    }
+
+    myAnimation();
+
+    
+
+
+
+  </script>
+</body>
+
+</html>
